@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Clima</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #e0f7fa;
+    }
+    h1 {
+      color: #00796b;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #00796b;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 15px;
+      font-size: 16px;
+      color: white;
+      background-color: #00796b;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+  </style>
+</head>
+<body>
+  <h1>Verifique o Clima</h1>
+  <form action="/clima" method="post">
+    <input type="text" name="cidade" placeholder="Digite o nome da cidade" required>
+    <button type="submit">Buscar</button>
+  </form>
+</body>
+</html>
